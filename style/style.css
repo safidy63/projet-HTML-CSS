@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: url("./../img/background.png");
+}
+/*Barre de navigation*/
+nav {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c55394;
+  color: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav .logo {
+  font-family: "Courgette", cursive;
+  font-size: 20px;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background-color: #eb43a3;
+}
+/*Contenu*/
+
+.contenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.contenu > h1 {
+  font-style: italic;
+  color: #c55394;
+  font-family: "Courgette", cursive;
+  font-weight: bold;
+  padding: 10px;
+  background: url("./../img/rainbow.png");
+  background-size: cover;
+}
+.contenu > div {
+  width: 70%;
+  padding: 10px 20px;
+  color: #333;
+  box-shadow: 1px 1px 1px 1px #333;
+  border-radius: 5px;
+}
+.contenu > div h4 {
+  color: #c55394;
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Courgette", cursive;
+  margin: 20px 0;
+}
+.contenu > div p {
+  font-size: 12px;
+}
+.licornes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "img1 img2 img3 img4";
+}
+.licornes figure:nth-child(1) {
+  grid-area: img1;
+}
+.licornes figure:nth-child(2) {
+  grid-area: img2;
+}
+.licornes figure:nth-child(3) {
+  grid-area: img3;
+}
+.licornes figure:nth-child(4) {
+  grid-area: img4;
+}
+.licornes figure img {
+  width: 90%;
+  padding-left: 5%;
+}
+.licornes figure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.licornes figure:hover{
+    transform: scale(1.2);
+}
+.licornes figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  left: 5%;
+  padding: 5px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.nousTrouver {
+  width: 100%;
+  display: flex;
+}
+.nousTrouver .maps {
+  width: 55%;
+}
+.nousTrouver .adresse {
+  margin-left: 20px;
+}
+iframe {
+  width: 100%;
+}
+input {
+  display: block;
+  width: 50%;
+  padding: 5px;
+  margin: 7px 0;
+}
+button[type="submit"] {
+  background-color: #c55394;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: #eb43a3;
+  border-radius: 5px;
+}
+footer {
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: #c55394;
+  text-align: end;
+  color: #ffffff;
+}
